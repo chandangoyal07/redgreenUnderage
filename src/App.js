@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const age=29;
+  const isGreen =false;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {age >21 ?  <h1>overage</h1> :  <h1>Underage</h1>}
+      <h1 style={{color:isGreen ? 'red' : 'green'}}>This has color</h1>
     </div>
   );
+
+  // if(age>18){
+  //   return <h1>Overage</h1>  
+  // }else{
+  //   return <h2>Underage</h2>
+  // }
 }
 
 export default App;
